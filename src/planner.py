@@ -9,4 +9,4 @@ def make_plan(pages, minutes_per_day, pages_per_hour=30):
     days_needed = -(-pages // pages_per_day)    
     finish_date = date.today() + timedelta(days=days_needed)
 
-    return {"Pages per day ": pages_per_day, "Days needed": days_needed, "Finish date": finish_date}
+    return {"pages_per_day": pages_per_day, "days_needed": days_needed, "finish_date": finish_date, "bail_out_page": 30}
